@@ -1,0 +1,22 @@
+.pagination-list {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.pagination-btn {
+  margin: 5px;
+  padding: 10px;
+  background-color: #E5974C;
+  color: #FFF;
+  border: 1px solid #E5974C;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.pagination-btn:active,
+.pagination-btn:focus {
+  background-color: #F16705;
+  border: 1px solid #E5974C
+}

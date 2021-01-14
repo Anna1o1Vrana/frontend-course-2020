@@ -1,12 +1,15 @@
 <h1 class="home-work-headline"> Home Work №12 'Http Client'</h1>
 <h2 class="headline">Users cards</h2>
 <div class="cards-list">
-
-<app-card
-  *ngFor="let user of userData | paginate: { itemsPerPage: 2, currentPage: currentPage }"
-[user]="user">
-</app-card>
-
+  <app-card
+    *ngFor="let user of usersArr"
+    [user]="user">
+  </app-card>
 </div>
-<pagination-controls (pageChange)="currentPage = $event" class="pagination-controls"></pagination-controls>
+<app-pagination
+  (onChangePage)="onChangePage($event)"
+  [pages] = "pages"
+  [currentPage]="currentPage"
+  [totalPages]="totalPages">
+</app-pagination>
 

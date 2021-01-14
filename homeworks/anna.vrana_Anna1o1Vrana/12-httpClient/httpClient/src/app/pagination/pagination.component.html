@@ -1,0 +1,6 @@
+<div *ngIf="totalPages > 1" class="pagination-list">
+  <button *ngFor="let item of pages, let i= index"
+       class="pagination-btn"
+       (click)="getCurrentUsers(i)">{{i+1}}
+  </button>
+</div>
